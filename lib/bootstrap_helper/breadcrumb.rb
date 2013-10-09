@@ -15,7 +15,7 @@ module BootstrapHelper
       protected
 
       def set_breadcrumbs
-        @breadcrumbs = ["	<i class="icon-home home-icon"></i><a href='/'>Home</a>".html_safe]
+        @breadcrumbs = ["<i class='icon-home home-icon'></i><a href='/'>Home</a>".html_safe]
       end
 
       def drop_breadcrumb(title=nil, url=nil)
