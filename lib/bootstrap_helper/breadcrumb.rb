@@ -15,14 +15,14 @@ module BootstrapHelper
       protected
 
       def set_breadcrumbs
-        @breadcrumbs = ["<i class='icon-home home-icon'></i><a href='/'>Home</a>".html_safe]
+        @breadcrumbs = ["<i class='icon-home home-icon'></i><a data-method='get' href='/'>Home</a>".html_safe]
       end
 
       def drop_breadcrumb(title=nil, url=nil)
         title ||= @page_title
-        
+
         if title && url
-          @breadcrumbs.push("<a href='#{url}'>#{title}</a>".html_safe)
+          @breadcrumbs.push("<a data-method='get' href='#{url}'>#{title}</a>".html_safe)
         elsif title
           @breadcrumbs.push("#{title}".html_safe)
         end
