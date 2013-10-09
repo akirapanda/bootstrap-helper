@@ -58,7 +58,7 @@ module BootstrapHelper
 
           crumb += content_tag(:li, breadcrumb_content ,:class => breadcrumb_class ) + "\n"
         end
-        return prefix + content_tag(:ul, crumb, :class => "breadcrumb menu clearfix")
+        return prefix + content_tag(:ul, crumb, :class => "breadcrumb clearfix")
       end
     end
   end
