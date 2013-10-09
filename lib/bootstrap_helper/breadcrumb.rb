@@ -50,7 +50,6 @@ module BootstrapHelper
           breadcrumb_class << "" if i == 0
           breadcrumb_class << "active" if i == (@breadcrumbs.length - 1)
           
-      		<li class="active">Tables</li>
           if i == (@breadcrumbs.length - 1)
             breadcrumb_content = c
           else
