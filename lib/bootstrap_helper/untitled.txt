@@ -1,0 +1,7 @@
+   	$.ajax url:'/customers',dataType:'json',success: (data) ->
+			$(data).each (index, val) ->
+				name=val.chinese_name
+				console.log("hello"+name)
+				companys.push(name)
+			console.log("hello"+companys)
+			return process(companys)
