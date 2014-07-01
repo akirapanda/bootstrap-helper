@@ -59,7 +59,7 @@ if defined?(SimpleForm)
 
 
     # 指定boolean_style为inline，避免生成checkbox外面再套一个label
-     config.wrappers :radiobox, :tag => 'div', :class => 'control-group', :error_class => 'error', :boolean_style => :inline do |b|
+     config.wrappers :radiobox, :tag => 'div', :class => 'control-group', :error_class => 'error' do |b|
        b.use :label
        b.wrapper :tag => 'div', :class => 'controls' do |input|
          # 这里自己手工生成一个label，input会生成checkbox和hidden
